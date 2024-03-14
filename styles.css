@@ -84,9 +84,73 @@ button:hover {
 
 footer {
   background-color: #2c1338;
-  color: #efd6fc;;
+  color:#efD6fc;
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2c1338; /* Dark purple background */
+  font-family: "Madimi One", sans-serif;
+}
+.clock-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+  .clock {
+    font-size: 30px;
+    font-family: "Madimi One", sans-serif;
+    width: 30px;
+    color: #fff; /* White color for clock text */
+    margin: 0 30px -30px 12px;
+  }
+  .time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75px;
+}
+
+
+  .clock-colon {
+      font-size: 30px;
+      color: #fff; /* White color for clock text */
+       margin-top: -30px;
+  }
+
+  .label {
+      color: #fff;
+      font-size: 10px;
+      margin-top: 40px; /* Add spacing between clock and label */
+      margin-left: 0px;
+  }
+  .controls{
+    margin-right: 20px;
+  }
+  .stopwatch{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+  button {
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 150px;
+  }
+
+  footer{
+    margin-right: 15px;
+    margin-bottom: 8px;
+  }
 }
