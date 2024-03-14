@@ -107,7 +107,7 @@ footer {
   justify-content: center;
 }
   .clock {
-    font-size: 20px;
+    font-size: 40px;
     font-family: "Madimi One", sans-serif;
     width: 25px;
     color: #fff; /* White color for clock text */
@@ -131,10 +131,7 @@ footer {
       color: #fff;
       font-size: 10px;
       margin-top: 40px; /* Add spacing between clock and label */
-      margin-left: -17px;
-  }
-  .controls{
-    margin-right: 20px;
+      margin-left: 0px;
   }
   .stopwatch{
   display: flex;
