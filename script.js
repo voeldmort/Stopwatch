@@ -36,6 +36,12 @@ function playBeep() {
   beepAudio.play();
 }
 
+// Function to stop beep sound
+function stopBeep() {
+  beepAudio.pause();
+  beepAudio.currentTime = 0;
+}
+
 // Function to start the clock
 function startClock() {
   console.log("pauseStartTime", pauseStartTime);
@@ -60,6 +66,7 @@ function pauseClock() {
     clearInterval(timerInterval);
     isClockRunning = false;
     pauseStartTime = elapsedTime;
+      stopBeep();
   }
   isClockRunning = false;
 }
@@ -75,6 +82,7 @@ function resetClock() {
   document.getElementById('second').textContent = '00';
   document.getElementById('millisecond').textContent = '00';
   isClockRunning = false;
+   stopBeep();
 }
 
 // Function to toggle clock start/pause
